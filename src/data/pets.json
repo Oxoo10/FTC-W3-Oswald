@@ -1,0 +1,59 @@
+[
+    {
+        "name": "MO231 - Pomeranian White",
+        "gene": "Male",
+        "image": "src/assets/images/pomeranianwhite.png",
+        "age": "02 months",
+        "price": "6.900.000 VND"
+    },
+    {
+        "name": "MO502 - Poodle Tiny Yellow",
+        "gene": "Female",
+        "image": "/src/assets/images/poodletinyyellow.png",
+        "age": "02 months",
+        "price": "3.900.000 VND"
+    },
+    {
+        "name": "MO102 - Poodle Tiny Sepia",
+        "gene": "Male",
+        "image": "/src/assets/images/poodletinysepia.png",
+        "age": "02 months",
+        "price": "4.000.000 VND"
+    },
+    {
+        "name": "MO512 - Alaskan Malamute Grey",
+        "gene": "Male",
+        "image": "/src/assets/images/alaskamalamutegrey.png",
+        "age": "02 months",
+        "price": "8.900.000 VND"
+    },
+    {
+        "name": "MO231 - Pembroke Corgi Cream",
+        "gene": "Male",
+        "image": "/src/assets/images/pembrokecorgicream.png",
+        "age": "02 months",
+        "price": "7.900.000 VND"
+    },
+    {
+        "name": "MO502 - Pembroke Corgi Tricolor",
+        "gene": "Female",
+        "image": "/src/assets/images/pembrokecorgitricolor.png",
+        "age": "02 months",
+        "price": "9.000.000 VND"
+    },
+    {
+        "name": "MO231 - Pomeranian White",
+        "gene": "Female",
+        "image": "/src/assets/images/pomeranianwhite2.png",
+        "age": "02 months",
+        "price": "6.500.000 VND"
+    },
+    {
+        "name": "MO512 - Poodle Tiny Dairy Cow",
+        "gene": "Male",
+        "image": "/src/assets/images/poodletinydairycow.png",
+        "age": "02 months",
+        "price": "5.000.000 VND"
+    }
+
+]

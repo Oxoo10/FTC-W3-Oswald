@@ -1,0 +1,230 @@
+---
+import { Image } from "astro:assets";
+import Layout from "../layouts/layout.astro";
+import heroImage from "../assets/images/heroimage.png";
+import Cardpets from "../components/card1.astro";
+import Cardproducts from "../components/card2.astro";
+import Cardarticles from "../components/card3.astro";
+import pets from "../data/pets.json";
+import products from "../data/products.json";
+import articles from "../data/article.json";
+import Arrowleft from "../assets/icons/arrowleft.svg";
+import Herobg from "../layouts/herobg.astro";
+import Mediaplay from "../assets/icons/mediaplay.svg";
+import CalltoAction from "../assets/images/calltoaction.png";
+import Shape1 from "../assets/images/shape1ban.svg";
+import Shape2 from "../assets/images/shape2ban.svg";
+import Sheba from "../assets/icons/sheba.svg";
+import Whiskas from "../assets/icons/whiskas.svg";
+import Bakers from "../assets/icons/bakers.svg";
+import Felix from "../assets/icons/felix.svg";
+import Goodboy from "../assets/icons/goodboy.svg";
+import Butchers from "../assets/icons/butchers.svg";
+import Pedigree from "../assets/icons/pedigree.svg";
+import Adoption from "../assets/icons/Adoption.png";
+import Footprint from "../assets/icons/footprint.svg";
+import Adoptionban1 from "../assets/images/Adoptionban1.svg";
+import Adoptionban2 from "../assets/images/Adoptionban2.svg";
+import Rectangle from "../assets/heroshapes/Rectanglehero.svg";
+import SmallRectangle from "../assets/heroshapes/smallrect.svg";
+import DoubleRectangle from "../assets/heroshapes/Rectangledb.svg";
+---
+
+<Layout>
+	<section id="hero" class="flex bg-secondary-40 justify-center text-primary">
+		
+		<div class="relative flex max-w-7xl mx-auto overflow-y-clip py-20">
+			<SmallRectangle class="absolute text-primary-80 top-50 left-185 w-[1.5rem] -rotate-20 z-20"/>
+			<DoubleRectangle class="absolute top-49 left-185 rotate-10 z-19"/>
+			<SmallRectangle class="absolute text-secondary-60 w-[0.914rem] top-34 left-190 rotate-40 z-19"/>
+			<Rectangle class="absolute  w-635 -bottom-60 -left-76 rotate-9 z-9"/>
+			<Rectangle class="absolute text-secondary -bottom-50 -right-14 rotate-23 z-10" />
+
+			<div class="flex flex-col gap-6 py-20 pr-50">
+				<div class="flex flex-col font-bold gap-1">
+					<h1 class="text-5xl">One more friend</h1>
+					<h2 class="text-4xl">Thousands more fun!</h2>
+				</div>
+				<p class="font-medium text-neutral-80">
+					Having a pet means you have more joy, a new friend, a happy
+					person who will always be with you to have fun. We have 200+
+					different pets that can meet your needs!
+				</p>
+				<div class="flex gap-5">
+					<button class="flex items-center border rounded-full border-primary text-primary px-7 py-2 gap-2">
+						View intro
+						<Mediaplay class=" border-1 rounded-full"/>
+					</button>
+					<button class="bg-primary text-neutral-0 rounded-full px-7 py-4">
+						Explore Now
+					</button>
+				</div>
+			</div>
+			<div>
+				<Image src={heroImage} alt="Heroimage" class="relative w-[944px] right-5 -bottom-19 z-20"/>
+				
+			</div>
+		</div>
+	</section>
+	<section id="petshome" class="max-w-7xl py-20 mx-auto">
+		<div class="flex justify-between">
+			<div class="flex flex-col">
+				<h2 class="font-medium text-base">Whats new?</h2>
+				<h3 class="text-2xl text-primary-80 font-bold">
+					Take a look at some of our pets
+				</h3>
+			</div>
+			<button
+				class="flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
+			>
+				View more
+				<Arrowleft />
+			</button>
+		</div>
+		<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+			{pets.map((pet) => <Cardpets {...pet} />)}
+		</div>
+	</section>
+
+	<!-- Call to action banner -->
+	 <section class="w-full">
+		<!-- container -->
+		<div class="relative flex flex-row bg-primary justify-between h-94 max-w-7xl gap-30 mx-auto">
+			<Shape1 class="absolute left-0 bottom-0 z-10"/>
+			<Shape2 class="absolute top-0 right-0 z-10"/>
+			<!-- Content -->
+			<Image src={CalltoAction} alt="" class="z-11"></Image>
+			<div class="flex flex-col  gap-6 text-primary items-end p-20 z-11">
+				<div class="flex flex-col gap-6 items-end ">
+					<!-- Introduction -->
+					<div class="flex flex-col font-bold items-end gap-4">
+					<h1 class="text-5xl">One more friend</h1>
+					<h2 class="text-4xl">Thousands more fun!</h2>
+				</div>
+				<!-- Description -->
+				<p class="text-end font-medium text-neutral-80">
+					Having a pet means you have more joy, a new friend, a happy
+					person who will always be with you to have fun. We have 200+
+					different pets that can meet your needs!
+				</p>
+				<!-- Buttons -->
+				<div class="flex gap-5">
+					<button class="flex items-center border rounded-full border-primary text-primary px-7 py-2 gap-2">
+						View intro
+						<Mediaplay class=" border-1 rounded-full"/>
+					</button>
+					<button class="bg-primary text-neutral-0 rounded-full px-7 py-4">
+						Explore Now
+					</button>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	 </section>
+<!-- Our products -->
+	 <section id="products" class="max-w-7xl py-20 mx-auto">
+		<div class="flex justify-between align-baseline">
+			<div class="flex flex-col">
+				<h2 class="font-medium text-base">Hard to choose right products for your pets?</h2>
+				<h3 class="text-2xl text-primary font-bold">
+					Our Products
+				</h3>
+			</div>
+			<button
+				class="flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
+			>
+				View more
+				<Arrowleft />
+			</button>
+		</div>
+		<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+			{products.map((product) => <Cardproducts {...product} />)}
+		</div>
+	</section>
+<!-- Sellers -->
+	<section id="products" class="max-w-7xl py-20 mx-auto">
+		<div class="flex justify-between align-baseline">
+			<div class="flex items-center gap-2">
+				<h2 class="font-medium text-base">Proud to be part of</h2>
+				<h3 class="text-2xl text-primary font-bold">
+					Pet Sellers
+				</h3>
+			</div>
+			<button
+				class="flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
+			>
+				View more
+				<Arrowleft />
+			</button>
+		</div>
+		<!-- Logos -->
+		<div class="flex items-center gap-20 p-6">
+			<Sheba />
+			<Whiskas />
+			<Bakers />
+			<Felix />
+			<Goodboy />
+			<Butchers />
+			<Pedigree />
+		</div>
+		<!-- Adoption card -->
+		<div class="relative flex flex-row bg-[#FFB775] justify-between h-94 max-w-7xl gap-20 mx-auto">
+			<Adoptionban1 class="absolute left-0 top-0 z-10"/>
+			<Adoptionban2 class="absolute bottom-0 right-0 z-10"/>
+			<!-- Content -->
+			 <div class="flex flex-col  gap-6 text-primary items-start p-20 z-11">
+				<div class="flex flex-col gap-6 items-start ">
+					<!-- Introduction -->
+					<div class="flex flex-col font-bold gap-4">
+					<h1 class="flex font-extrabold items-end text-5xl gap-4">
+						Adoption
+						<Footprint />
+					</h1>
+					<h2 class="text-4xl">We need help. So do they.</h2>
+				</div>
+				<!-- Description -->
+				<p class="font-medium text-sm text-neutral-80">
+					Adopt a pet and give it a home,<br> it will be love you back unconditionally.
+				</p>
+				<!-- Buttons -->
+				<div class="flex gap-5">
+					<button class="bg-primary text-neutral-0 rounded-full px-7 py-4">
+						Explore Now
+					</button>
+					<button class="flex items-center border rounded-full border-primary text-primary px-7 py-2 gap-2">
+						View intro
+						<Mediaplay class=" border-1 rounded-full"/>
+					</button>
+					
+				</div>
+				</div>
+			</div>
+			<Image src={Adoption} alt="" class="z-11" />
+			
+			
+		</div>
+	</section>
+
+	<!-- Newsroom -->
+	 <section id="products" class="max-w-7xl py-20 mx-auto">
+		<div class="flex justify-between align-baseline">
+			<div class="flex flex-col">
+				<h2 class="font-medium text-base">You already know ?</h2>
+				<h3 class="text-2xl text-primary font-bold">
+					Useful pet knowledge
+				</h3>
+			</div>
+			<button
+				class="flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
+			>
+				View more
+				<Arrowleft />
+			</button>
+		</div>
+		<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
+			{articles.map((article) => <Cardarticles {...article} />)}
+		</div>
+	</section>
+
+</Layout>

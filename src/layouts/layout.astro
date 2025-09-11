@@ -1,0 +1,26 @@
+---
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import { Font } from 'astro:assets';
+import '../styles/globalstyle.css';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+        <Font cssVariable="--font-gilroy" preload />
+		<title>Astro</title>
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer is:inline></script>
+	</head>
+	<body class="">
+		<Header />
+        <main class="overflow-x-hidden">
+            <slot />
+        </main>
+        <Footer />
+	</body>
+</html>

@@ -1,0 +1,68 @@
+[
+    {
+        "name": "Reflex Plus Adult Cat Food Salmon",
+        "product": "Dog",
+        "image": "/src/assets/images/Reflex plus adult dog food salmon.png",
+        "size": "385gm",
+        "price": "6.900.000 VND",
+        "gift": "Free Toy & Free Shaker"
+    },
+    {
+        "name": "Reflex Plus Adult Cat Food Salmon",
+        "product": "Cat Food",
+        "image": "/src/assets/images/Reflex plus adult cat food salmon.png",
+        "size": "1.5kg",
+        "price": "165.000 VND",
+        "gift": "Free Toy & Free Shaker"
+    },
+    {
+        "name": "Cat scratching ball toy kitten sisal rope ball",
+        "product": "Toy",
+        "image": "/src/assets/images/cat scratching ball.png",
+        "size": "",
+        "price": "1.100.000 VND",
+        "gift": "Free Cat Food"
+    },
+    {
+        "name": "Cute Pet Cat Warm Nest",
+        "product": "Toy",
+        "image": "/src/assets/images/warm nest cat.png",
+        "size": "",
+        "price": "410.000 VND",
+        "gift": "Free Cat Food"
+    },
+    {
+        "name": "NaturVet Dogs - Omega-Gold Plus Salmon Oil",
+        "product": "Dog Food",
+        "image": "/src/assets/images/omega gold plus dog.png",
+        "size": "385gm",
+        "price": "500.000 VND",
+        "gift": "Free Toy & Free Shaker"
+    },
+    {
+        "name": "Costumes Fashion Pet Clother Cowboy Rider",
+        "product": "Costume",
+        "image": "/src/assets/images/costume fashion dog.png",
+        "size": "1.5kg",
+        "price": "400.000 VND",
+        "gift": "Free Toy & Free Shaker"
+    },
+    {
+        "name": "Costumes Chicken Drumsti ck Headband",
+        "product": "Costume",
+        "image": "/src/assets/images/costume chicken drumsti.png",
+        "size": "",
+        "price": "400.000 VND",
+        "gift": "Free Cat Food"
+    },
+    {
+        "name": "Plush Pet Toy",
+        "product": "Toy",
+        "image": "/src/assets/images/plush pet toy.png",
+        "size": "385gm",
+        "price": "250.000 VND",
+        "gift": "Free Food & Shaker"
+    }
+    
+    
+]

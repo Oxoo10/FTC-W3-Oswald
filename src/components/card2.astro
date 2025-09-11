@@ -1,0 +1,27 @@
+---
+// Data of the cards of the pets
+const {name, product, size, price, image, gift} = Astro.props;
+import Gift from "../assets/icons/gift.svg"
+---
+
+<div class="product-card flex flex-col justify-between bg-neutral-0 rounded-2xl font-regular shadow-lg p-2">
+    <a href={} class="flex flex-col gap-2 text-neutral-100">
+        <img src={image} alt={name} class="w-full h-2/3 object-cover rounded-lg">
+        <div class="flex flex-col gap-1 p-2">
+            <h3 class="text-base font-bold ">{name}</h3>
+            <p class="text-neutral-60">
+                <span >Product: </span>
+                <span class="font-bold">{product}</span>
+                <span>⸱</span>
+                <span>Size: </span>
+                <span class="font-bold">{size}</span>
+            </p>
+            <h4 class="text-sm font-bold">{price}</h4>
+            <div class="flex bg-secondary-40 rounded-lg items-center gap-2 p-2">
+                <Gift />
+                <span class="text-2xl">⸱</span>
+                <p class="font-bold text-primary-80">{gift}</p>
+            </div>
+        </div>
+    </a>
+</div>
