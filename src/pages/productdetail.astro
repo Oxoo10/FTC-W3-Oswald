@@ -19,7 +19,6 @@ import HealthInsurance from "../assets/icons/healthguareantee.svg";
 import IdentificatioInsurance from "../assets/icons/identificationguarantee.svg";
 import Chat from "../assets/icons/chat.svg";
 
-const images = [Shiba1, Shiba2, Shiba3, Shiba4, Shiba5, Shiba6];
 
 const pet = {
   sku: "#0000076",
@@ -39,73 +38,52 @@ const pet = {
 };
 ---
 <Layout>
-    <section class="flex flex-col lg:flex-row w-full gap-6 mx-auto">
-        <div class="flex flex-col lg:flex-row mx-auto">
-            <div 
-  x-data="{
-    images: [
-      Shibaprofile,
-      Shiba1,
-      Shiba2,
-      Shiba3,
-      Shiba4,
-      Shiba5,
-      Shiba6
-    ],
-    index: 0,
-    get current() {
-      return this.images[this.index];
-    },
-    prev() {
-      this.index = (this.index - 1 + this.images.length) % this.images.length;
-    },
-    next() {
-      this.index = (this.index + 1) % this.images.length;
-    }
-  }"
-  class="relative"
->
-  <!-- Main Image wrapped with link -->
-  <a href={`/shop/${pet.sku}`}>
-    <img 
-      :src="current.src" 
-      alt={pet.name} 
-      class="w-full rounded-2xl shadow-md" 
-    />
-  </a>
 
-  <!-- Left Button -->
-  <button 
-    @click="prev"
-    class="absolute top-1/2 left-3 -translate-y-1/2 bg-white/70 w-10 h-10 rounded-full flex items-center justify-center shadow hover:bg-white"
-  >
-    <img src={Arrowleftbut.src} alt="Previous" />
-  </button>
+    
+    <section class="">
+        <div class="grid grid-cols-2 grid-rows-2 border w-full max-w-7xl gap-6 mx-auto">
+            <div class="flex flex-col w-1/2">
+                <div x-data="{ current: '/src/assets/images/shibainusepia.png' }" class="">
+                    <!-- Main Image -->
+                    <img :src="current" alt="Shiba Inu Sepia" class="relative w-full rounded-2xl shadow-md" />
+                    <!-- Left/Right arrows -->
+                    <div class="absolute top-1/2 left-3 -translate-y-1/2 flex gap-2">
+                        <button class="bg-white/70 w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        <Arrowleftbut />
+                        </button>
+                    </div>
+                    <div class="absolute top-1/2 right-3 -translate-y-1/2 flex gap-2">
+                        <button class="bg-white w-10 h-10 rounded-full flex items-center justify-center shadow">
+                        <Arrowrightbut />
+                        </button>
+                    </div>
+                    
+                    
 
-  <!-- Right Button -->
-  <button 
-    @click="next"
-    class="absolute top-1/2 right-3 -translate-y-1/2 bg-white/70 w-10 h-10 rounded-full flex items-center justify-center shadow hover:bg-white"
-  >
-    <img src={Arrowrightbut.src} alt="Next" />
-  </button>
+                    <!-- Thumbnails -->
+                    <div class="flex gap-3">
+                        <Image src={Shiba2} alt="Shiba Inu Sepia"
+                            class="object-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary"
+                            @click="current = 'src/assets/images/shiba inu sepia/image 4.png'" />
+                        <Image src={Shiba1} alt="Shiba Inu Sepia" 
+                            class="object-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary"
+                            @click="current = 'src/assets/images/shiba inu sepia/image 3.png'" />
+                        <Image src={Shiba3} alt="Shiba Inu Sepia"
+                            class="object-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary"
+                            @click="current = 'src/assets/images/shiba inu sepia/image 5.png'" />
+                        <Image src={Shiba4} alt="Shiba Inu Sepia"
+                            class="object-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary"
+                            @click="current = 'src/assets/images/shiba inu sepia/image 6.png'" />
+                        <Image src={Shiba5} alt="Shiba Inu Sepia"
+                            class="object-cover rounded-lg cursor-pointer hover:ring-2 hover:ring-primary"
+                            @click="current = 'src/assets/images/shiba inu sepia/image 7.png'" />
+                    </div>
+                </div>
+            </div>
 
-  <!-- Thumbnails -->
-  <div class="flex justify-between gap-3 mt-4">
-    <template x-for="(img, i) in images" :key="i">
-      <img 
-        :src="img.src" 
-        alt="Thumbnail"
-        class="w-20 h-20 object-cover rounded-lg cursor-pointer border-2"
-        :class="i === index ? 'border-primary' : 'border-transparent hover:border-primary/60'"
-        @click="index = i"
-      />
-    </template>
-  </div>
-</div>
 
         <!-- Right section -->
-        <div class="w-full lg:w-1/2">
+        <div class="w-1/2 lg:w-1/2">
             <!-- Breadcrumb -->
             <nav class="text-sm text-gray-500 mb-4">
                 <a href="/" class="hover:text-primary">Home</a> › 
