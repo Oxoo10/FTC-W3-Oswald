@@ -1,35 +1,8 @@
-/* Load Gilroy Font */
-/* @font-face {
-  font-family: 'Gilroy';
-  src: url('./fonts/Gilroy-Regular.woff2') format('woff2');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+html,
+body {
+    max-width: 100%;
+    overflow-x: hidden;
 }
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('./assets/fonts/Gilroy-Medium.woff2') format('woff2');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('./assets/fonts/Gilroy-SemiBold.woff2') format('woff2');
-  font-weight: 600;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Gilroy';
-  src: url('./assets/Gilroy-Bold.woff2') format('woff2');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-} */
 
 @import "tailwindcss";
 
@@ -233,3 +206,4 @@
       scrollbar-width: none; /* Firefox */
     }
 }
+
