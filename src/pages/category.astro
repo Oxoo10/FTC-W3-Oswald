@@ -235,10 +235,8 @@ const pets = [
 
 <script>
   const grid = document.getElementById("dogGrid");
-  const priceValue = document.getElementById("priceValue");
 
   function filterDogs() {
-    // Get selected filters
     const genders = [...document.querySelectorAll(".filter-gender:checked")].map(cb => cb.value);
     const colors  = [...document.querySelectorAll(".filter-color:checked")].map(cb => cb.value);
     const breeds  = [...document.querySelectorAll(".filter-breed:checked")].map(cb => cb.value);
@@ -246,28 +244,24 @@ const pets = [
     const minPrice = parseInt(document.querySelector(".filter-price-min")?.value || "0", 10);
     const maxPrice = parseInt(document.querySelector(".filter-price-max")?.value || "999999999", 10);
 
-    if (!grid) return; // stop if grid not found
+    if (!grid) return;
 
-    // Loop through cards
     grid.querySelectorAll(".product-card").forEach(card => {
-      const cardPrice = parseInt(card.dataset.price?.replace(/\./g, "") || "0", 10);
+      const cardPrice = parseInt(card.dataset.price || "0", 10);
       const matchGender = !genders.length || genders.includes(card.dataset.gender || "");
       const matchColor  = !colors.length || colors.includes(card.dataset.color || "");
       const matchBreed  = !breeds.length || breeds.includes(card.dataset.breed || "");
       const matchPrice  = cardPrice >= minPrice && cardPrice <= maxPrice;
 
-      card.style.display = (matchGender && matchColor && matchBreed && matchPrice) 
-    ? "block" 
-    : "none";
-});
+      card.hidden = !(matchGender && matchColor && matchBreed && matchPrice);
+    });
   }
 
-  // Attach listeners
-  document.querySelectorAll("input").forEach(input => {
-    input.addEventListener("input", filterDogs);
-    input.addEventListener("change", filterDogs);
+  document.addEventListener("DOMContentLoaded", () => {
+    document.querySelectorAll("input").forEach(input => {
+      input.addEventListener("input", filterDogs);
+      input.addEventListener("change", filterDogs);
+    });
+    filterDogs();
   });
-
-  // Run once on load
-  filterDogs();
 </script>
