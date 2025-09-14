@@ -27,290 +27,278 @@ import DoubleRectangle from "../assets/heroshapes/Rectangledb.svg";
 ---
 
 <Layout>
-	<!-- Hero section -->
-	<section
-		id="hero"
-		class="static flex bg-secondary-40 top-0 justify-center text-primary"
-	>
-		<div
-			class="absolute -top-5 overflow-x-hidden bg-secondary-40 w-full h-1/3 -z-0"
-		>
-			<div class="flex mx-auto">
-				<div
-					class="absolute -top-80 -left-14 lg:-left-13 rounded-[99px] rotate-20 bg-secondary w-100 h-100 z-50"
-				>
-				</div>
-			</div>
-		</div>
-		<div
-			class="relative flex flex-col lg:flex-row items-stretch max-w-7xl mx-auto overflow-y-clip px-4"
-		>
-			<!-- text -->
-			<div class="flex flex-col gap-6 py-10 lg:py-20 lg:pr-50">
-				<div class="relative flex flex-col font-bold gap-4">
-					<div
-						class="absolute hidden lg:block -left-2 w-20 h-20 bg-secondary rounded-4xl rotate-30"
-					>
-					</div>
-					<h1 class="text-4xl lg:text-7xl z-10">One More Friend</h1>
-					<h2 class="text-2xl lg:text-[3.50rem]">
-						Thousands More Fun!
-					</h2>
-				</div>
-				<p class="font-medium text-neutral-80">
-					Having a pet means you have more joy, a new friend, a happy
-					person who will always be with you to have fun. We have 200+
-					different pets that can meet your needs!
-				</p>
-				<div class="flex gap-5">
-					<button
-						class="flex items-center border rounded-full border-primary text-primary px-7 py-2 gap-2"
-					>
-						View intro
-						<Mediaplay class="border-1 rounded-full" />
-					</button>
-					<button
-						class="bg-primary text-neutral-0 rounded-full px-7 py-4"
-					>
-						Explore Now
-					</button>
-				</div>
-			</div>
-			<!-- Image -->
-			<div class="relative">
-				<div class="absolute -top-70 right-15 lg:top-25 lg:left-0 z-9">
-					<DoubleRectangle class="relative top- rotate-10 z-19" />
-					<SmallRectangle
-						class="relative text-primary-80 -top-7 w-[1.5rem] -rotate-20 z-20"
-					/>
-					<SmallRectangle
-						class="relative text-secondary-60 w-[0.914rem] -top-30 left-8 rotate-40 z-19"
-					/>
-				</div>
-				<div>
-					<div class="absolute -top-0 right-0 lg:top-0 lg:left-0">
-						<div class="w-158 h-158 bg-primary-80 absolute top-0 -right-270 lg:top-68 lg:-right-30 rotate-10 rounded-[99px] z-9"></div>
-						<div class="w-138 h-138 bg-secondary-60 absolute top-0 -right-270 lg:top-60 lg:-right-40 rounded-[99px] rotate-30 lg:rotate-23 z-10"></div>
-					</div>
-					<Image
-						src={heroImage}
-						alt="Heroimage"
-						class="relative w-3/4 lg:w-[944px] lg:right-5 lg:-bottom-20 z-20 mx-auto"
-					/>
-				</div>
-			</div>
-		</div>
-	</section>
+  <!-- Hero section -->
+  <section
+    id="hero"
+    class="static flex bg-secondary-40 top-0 justify-center text-primary"
+  >
+    <div
+      class="absolute -top-5 overflow-x-hidden bg-secondary-40 w-full h-1/3 -z-0"
+    >
+      <div class="flex mx-auto">
+        <div
+          class="absolute -top-80 -left-14 lg:-left-13 rounded-[99px] rotate-20 bg-secondary w-100 h-100 z-50"
+        >
+        </div>
+      </div>
+    </div>
+    <div
+      class="relative flex flex-col lg:flex-row items-stretch max-w-7xl mx-auto overflow-y-clip px-4"
+    >
+      <!-- text -->
+      <div class="flex flex-col gap-6 py-10 lg:py-20 lg:pr-50">
+        <div class="relative flex flex-col font-bold gap-4">
+          <div
+            class="absolute hidden lg:block -left-2 w-20 h-20 bg-secondary rounded-4xl rotate-30"
+          >
+          </div>
+          <h1 class="text-4xl lg:text-7xl z-10">One More Friend</h1>
+          <h2 class="text-2xl lg:text-[3.50rem]">Thousands More Fun!</h2>
+        </div>
+        <p class="font-medium text-neutral-80">
+          Having a pet means you have more joy, a new friend, a happy person who
+          will always be with you to have fun. We have 200+ different pets that
+          can meet your needs!
+        </p>
+        <div class="flex gap-5">
+          <button
+            class="flex items-center border rounded-full border-primary text-primary px-7 py-2 gap-2"
+          >
+            View intro
+            <Mediaplay class="border-1 rounded-full" />
+          </button>
+          <button class="bg-primary text-neutral-0 rounded-full px-7 py-4">
+            Explore Now
+          </button>
+        </div>
+      </div>
+      <!-- Image -->
+      <div class="relative">
+        <div class="absolute -top-70 right-15 lg:top-25 lg:left-0 z-9">
+          <DoubleRectangle class="relative top- rotate-10 z-19" />
+          <SmallRectangle
+            class="relative text-primary-80 -top-7 w-[1.5rem] -rotate-20 z-20"
+          />
+          <SmallRectangle
+            class="relative text-secondary-60 w-[0.914rem] -top-30 left-8 rotate-40 z-19"
+          />
+        </div>
+        <div>
+          <div class="absolute -top-0 right-0 lg:top-0 lg:left-0">
+            <div
+              class="w-158 h-158 bg-primary-80 absolute top-0 -right-270 lg:top-68 lg:-right-30 rotate-10 rounded-[99px] z-9"
+            >
+            </div>
+            <div
+              class="w-138 h-138 bg-secondary-60 absolute top-0 -right-270 lg:top-60 lg:-right-40 rounded-[99px] rotate-30 lg:rotate-23 z-10"
+            >
+            </div>
+          </div>
+          <Image
+            src={heroImage}
+            alt="Heroimage"
+            class="relative w-3/4 lg:w-[944px] lg:right-5 lg:-bottom-20 z-20 mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <section id="petshome" class="max-w-7xl py-20 mx-auto px-4 lg:px-0">
+    <div class="flex justify-between">
+      <div class="flex flex-col">
+        <h2 class="text-sm lg:text-base font-medium">Whats new?</h2>
+        <h3 class="text-lg lg:text-2xl text-primary-80 font-bold">
+          Take a look at some of our pets
+        </h3>
+      </div>
+      <button
+        class="hidden lg:flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
+      >
+        View more
+        <Arrowleft />
+      </button>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-2 p-4">
+      {pets.map((pet) => <Cardpets {...pet} />)}
+    </div>
+    <button
+      class="lg:hidden flex border-2 justify-center items-center border-primary rounded-full w-full gap-2 px-7 py-3"
+    >
+      View more
+      <Arrowleft />
+    </button>
+  </section>
 
-	<section id="petshome" class="max-w-7xl py-20 mx-auto px-4 lg:px-0">
-		<div class="flex justify-between">
-			<div class="flex flex-col">
-				<h2 class="text-sm lg:text-base font-medium">Whats new?</h2>
-				<h3 class="text-lg lg:text-2xl text-primary-80 font-bold">
-					Take a look at some of our pets
-				</h3>
-			</div>
-			<button
-				class="hidden lg:flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
-			>
-				View more
-				<Arrowleft />
-			</button>
-		</div>
-		<div class="grid grid-cols-2 lg:grid-cols-4 gap-2 p-4">
-			{pets.map((pet) => <Cardpets {...pet} />)}
-		</div>
-		<button
-				class="lg:hidden flex border-2 justify-center items-center border-primary rounded-full w-full gap-2 px-7 py-3"
-			>
-				View more
-				<Arrowleft />
-			</button>
-	</section>
+  <!-- Call to action banner -->
+  <section class="px-4 lg:px-0">
+    <!-- container -->
+    <div
+      class="flex flex-col lg:flex-row bg-primary justify-between rounded-3xl max-w-7xl gap-10 mx-auto overflow-clip"
+    >
+      <div
+        class="relative flex justify-center lg:left-0 order-2 lg:order-1 lg:bottom-0 rounded-3xl"
+      >
+        <div
+          class="absolute top-60 -left-20 lg:top-40 lg:-left-50 bg-primary-80 w-200 h-200 rounded-[99px] rotate-100 lg:rotate-120 z-10"
+        >
+        </div>
+        <Image
+          src={CalltoAction}
+          alt="Holding a poppy"
+          class="relative lg:-bottom-4 z-20"
+        />
+      </div>
+      <div
+        class="relative order-1 lg:order-2 flex flex-col gap-6 text-primary lg:items-end px-2 lg:px-20 py-10 z-11 lg:w-1/2"
+      >
+        <div
+          class="absolute -top-100 -right-20 lg:-bottom-20 lg:-right-55 bg-secondary-40 w-200 h-250 rounded-[99px] rotate-100 lg:rotate-120 z-10"
+        >
+        </div>
+        <div class="flex flex-col gap-6 text-center lg:items-end z-20">
+          <!-- Introduction -->
+          <div class="flex flex-col font-bold text-center lg:items-end gap-4">
+            <h1 class="font-extrabold text-4xl lg:text-5xl">One More Friend</h1>
+            <h2 class="text-2xl lg:text-4xl">Thousands more fun!</h2>
+          </div>
+          <!-- Description -->
+          <p
+            class="text-center lg:text-end font-medium text-neutral-80 lg:pl-10"
+          >
+            Having a pet means you have more joy, a new friend, a happy person
+            who will always be with you to have fun. We have 200+ different pets
+            that can meet your needs!
+          </p>
+          <!-- Buttons -->
+          <div class="flex gap-5 w-full">
+            <button
+              class="flex items-center border rounded-full border-primary text-primary text-xs lg:text-base px-7 py-2 gap-2"
+            >
+              View intro
+              <Mediaplay class="border-1 rounded-full" />
+            </button>
+            <button
+              class="bg-primary text-neutral-0 rounded-full text-xs lg:text-base px-7 lg:px-14 py-4"
+            >
+              Explore Now
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Our products -->
+  <section
+    id="products"
+    class="hidden lg:block max-w-7xl py-20 mx-auto px-4 lg:px-0"
+  >
+    <div class="flex justify-between align-baseline">
+      <div class="flex flex-col">
+        <h2 class="font-medium text-base">
+          Hard to choose right products for your pets?
+        </h2>
+        <h3 class="text-2xl text-primary font-bold">Our Products</h3>
+      </div>
+      <button
+        class="hidden lg:flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
+      >
+        View more
+        <Arrowleft />
+      </button>
+    </div>
+    <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 p-6">
+      {products.map((product) => <Cardproducts {...product} />)}
+    </div>
+  </section>
+  <!-- Sellers -->
+  <section
+    id="products"
+    class="hidden lg:flex flex-col max-w-7xl py-20 mx-auto"
+  >
+    <div class="flex justify-between align-baseline">
+      <div class="flex items-center gap-2">
+        <h2 class="font-medium text-sm lg:text-base">Proud to be part of</h2>
+        <h3 class="text-lg lg:text-2xl text-primary font-bold">Pet Sellers</h3>
+      </div>
+      <button
+        class="hidden lg:flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
+      >
+        View more
+        <Arrowleft />
+      </button>
+    </div>
+    <!-- Logos -->
+    <div class="flex items-center gap-20 p-6">
+      <Sheba />
+      <Whiskas />
+      <Bakers />
+      <Felix />
+      <Goodboy />
+      <Butchers />
+      <Pedigree />
+    </div>
+    <!-- Adoption card -->
+    <div
+      class="relative flex flex-row bg-[#FFB775] justify-between h-94 max-w-7xl gap-20 mx-auto"
+    >
+      <Adoptionban1 class="absolute left-0 top-0 z-10" />
+      <Adoptionban2 class="absolute bottom-0 right-0 z-10" />
+      <!-- Content -->
+      <div class="flex flex-col gap-6 text-primary items-start p-20 z-11">
+        <div class="flex flex-col gap-6 items-start">
+          <!-- Introduction -->
+          <div class="flex flex-col font-bold gap-4">
+            <h1 class="flex font-extrabold items-end text-5xl gap-4">
+              Adoption
+              <Footprint />
+            </h1>
+            <h2 class="text-4xl">We need help. So do they.</h2>
+          </div>
+          <!-- Description -->
+          <p class="font-medium text-sm text-neutral-80">
+            Adopt a pet and give it a home,<br /> it will be love you back unconditionally.
+          </p>
+          <!-- Buttons -->
+          <div class="flex gap-5">
+            <button class="bg-primary text-neutral-0 rounded-full px-7 py-4">
+              Explore Now
+            </button>
+            <button
+              class="flex items-center border rounded-full border-primary text-primary px-7 py-2 gap-2"
+            >
+              View intro
+              <Mediaplay class="border-1 rounded-full" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <Image src={Adoption} alt="" class="z-11" />
+    </div>
+  </section>
 
-	<!-- Call to action banner -->
-	<section class="px-4 lg:px-0">
-		<!-- container -->
-		<div
-			class="flex flex-col lg:flex-row bg-primary justify-between rounded-3xl max-w-7xl gap-10 mx-auto overflow-clip"
-		>
-			<div
-				class="relative flex justify-center lg:left-0 order-2 lg:order-1 lg:bottom-0 rounded-3xl"
-			>
-				<div
-					class="absolute top-60 -left-20 lg:top-40 lg:-left-50 bg-primary-80 w-200 h-200 rounded-[99px] rotate-100 lg:rotate-120 z-10"
-				>
-				</div>
-				<Image
-					src={CalltoAction}
-					alt="Holding a poppy"
-					class="relative lg:-bottom-4 z-20"
-				/>
-			</div>
-			<div
-				class="relative order-1 lg:order-2 flex flex-col gap-6 text-primary lg:items-end px-2 lg:px-20 py-10 z-11 lg:w-1/2"
-			>
-				<div
-					class="absolute -top-100 -right-20 lg:-bottom-20 lg:-right-55 bg-secondary-40 w-200 h-250 rounded-[99px] rotate-100 lg:rotate-120 z-10"
-				>
-				</div>
-				<div class="flex flex-col gap-6 text-center lg:items-end z-20">
-					<!-- Introduction -->
-					<div
-						class="flex flex-col font-bold text-center lg:items-end gap-4"
-					>
-						<h1 class="font-extrabold text-4xl lg:text-5xl">
-							One More Friend
-						</h1>
-						<h2 class="text-2xl lg:text-4xl">
-							Thousands more fun!
-						</h2>
-					</div>
-					<!-- Description -->
-					<p
-						class="text-center lg:text-end font-medium text-neutral-80 lg:pl-10"
-					>
-						Having a pet means you have more joy, a new friend, a
-						happy person who will always be with you to have fun. We
-						have 200+ different pets that can meet your needs!
-					</p>
-					<!-- Buttons -->
-					<div class="flex gap-5 w-full ">
-						<button
-							class="flex items-center border rounded-full border-primary text-primary text-xs lg:text-base px-7 py-2 gap-2"
-						>
-							View intro
-							<Mediaplay class="border-1 rounded-full" />
-						</button>
-						<button
-							class="bg-primary text-neutral-0 rounded-full text-xs lg:text-base px-7 lg:px-14 py-4"
-						>
-							Explore Now
-						</button>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-	<!-- Our products -->
-	<section
-		id="products"
-		class="hidden lg:block max-w-7xl py-20 mx-auto px-4 lg:px-0"
-	>
-		<div class="flex justify-between align-baseline">
-			<div class="flex flex-col">
-				<h2 class="font-medium text-base">
-					Hard to choose right products for your pets?
-				</h2>
-				<h3 class="text-2xl text-primary font-bold">Our Products</h3>
-			</div>
-			<button
-				class="hidden lg:flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
-			>
-				View more
-				<Arrowleft />
-			</button>
-		</div>
-		<div class="grid grid-cols-2 lg:grid-cols-4 gap-6 p-6">
-			{products.map((product) => <Cardproducts {...product} />)}
-		</div>
-	</section>
-	<!-- Sellers -->
-	<section
-		id="products"
-		class="hidden lg:flex flex-col max-w-7xl py-20 mx-auto"
-	>
-		<div class="flex justify-between align-baseline">
-			<div class="flex items-center gap-2">
-				<h2 class=" font-medium text-sm lg:text-base">Proud to be part of</h2>
-				<h3 class="text-lg lg:text-2xl text-primary font-bold">Pet Sellers</h3>
-			</div>
-			<button
-				class="hidden lg:flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
-			>
-				View more
-				<Arrowleft />
-			</button>
-		</div>
-		<!-- Logos -->
-		<div class="flex items-center gap-20 p-6">
-			<Sheba />
-			<Whiskas />
-			<Bakers />
-			<Felix />
-			<Goodboy />
-			<Butchers />
-			<Pedigree />
-		</div>
-		<!-- Adoption card -->
-		<div
-			class="relative flex flex-row bg-[#FFB775] justify-between h-94 max-w-7xl gap-20 mx-auto"
-		>
-			<Adoptionban1 class="absolute left-0 top-0 z-10" />
-			<Adoptionban2 class="absolute bottom-0 right-0 z-10" />
-			<!-- Content -->
-			<div class="flex flex-col gap-6 text-primary items-start p-20 z-11">
-				<div class="flex flex-col gap-6 items-start">
-					<!-- Introduction -->
-					<div class="flex flex-col font-bold gap-4">
-						<h1
-							class="flex font-extrabold items-end text-5xl gap-4"
-						>
-							Adoption
-							<Footprint />
-						</h1>
-						<h2 class="text-4xl">We need help. So do they.</h2>
-					</div>
-					<!-- Description -->
-					<p class="font-medium text-sm text-neutral-80">
-						Adopt a pet and give it a home,<br /> it will be love you
-						back unconditionally.
-					</p>
-					<!-- Buttons -->
-					<div class="flex gap-5">
-						<button
-							class="bg-primary text-neutral-0 rounded-full px-7 py-4"
-						>
-							Explore Now
-						</button>
-						<button
-							class="flex items-center border rounded-full border-primary text-primary px-7 py-2 gap-2"
-						>
-							View intro
-							<Mediaplay class="border-1 rounded-full" />
-						</button>
-					</div>
-				</div>
-			</div>
-			<Image src={Adoption} alt="" class="z-11" />
-		</div>
-	</section>
-
-	<!-- Newsroom -->
-	<section id="products" class="max-w-7xl py-20 px-4 lg:px-5 mx-auto">
-		<div class="flex justify-between">
-			<div class="flex flex-col">
-				<h2 class="font-medium text-base">You already know ?</h2>
-				<h3 class="text-2xl text-primary font-bold">
-					Useful pet knowledge
-				</h3>
-			</div>
-			<button
-				class="hidden lg:flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
-			>
-				View more
-				<Arrowleft />
-			</button>
-		</div>
-		<div class="grid grid-cols-1 lg:grid-cols-3 gap-6 py-6">
-			{articles.map((article) => <Cardarticles {...article} />)}
-		</div>
-		<button
-				class="lg:hidden flex border-2 justify-center items-center border-primary rounded-full w-full gap-2 px-7 py-3"
-			>
-				View more
-				<Arrowleft />
-			</button>
-	</section>
+  <!-- Newsroom -->
+  <section id="products" class="max-w-7xl py-20 px-4 lg:px-5 mx-auto">
+    <div class="flex justify-between">
+      <div class="flex flex-col">
+        <h2 class="font-medium text-base">You already know ?</h2>
+        <h3 class="text-2xl text-primary font-bold">Useful pet knowledge</h3>
+      </div>
+      <button
+        class="hidden lg:flex border-2 items-center border-primary rounded-full gap-2 px-7 py-3"
+      >
+        View more
+        <Arrowleft />
+      </button>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 py-6">
+      {articles.map((article) => <Cardarticles {...article} />)}
+    </div>
+    <button
+      class="lg:hidden flex border-2 justify-center items-center border-primary rounded-full w-full gap-2 px-7 py-3"
+    >
+      View more
+      <Arrowleft />
+    </button>
+  </section>
 </Layout>

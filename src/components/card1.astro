@@ -1,21 +1,23 @@
 ---
 // Data of the cards of the pets
-const {name, gender, age, price, image} = Astro.props;
+const { name, gender, age, price, image } = Astro.props;
 ---
 
-<div class="product-card flex flex-col justify-between bg-neutral-0 rounded-2xl font-regular shadow-lg p-2">
-    <a href="/productdetail" class="flex flex-col gap-2 text-neutral-100">
-        <img src={image} alt={name} class="w-full h-2/3 object-cover rounded-lg">
-        <div class="flex flex-col gap-1">
-            <h3 class="text-sm lg:text-base font-bold ">{name}</h3>
-            <p class="text-neutral-60 text-xs">
-                <span >Gene: </span>
-                <span class="font-bold">{gender}</span>
-                <span>⸱</span>
-                <span>Age: </span>
-                <span class="font-bold">{age} months</span>
-            </p>
-            <h4 class="text-sm font-bold">{price} VND</h4>
-        </div>
-    </a>
+<div
+  class="product-card flex flex-col justify-between bg-neutral-0 rounded-2xl font-regular shadow-lg p-2"
+>
+  <a href="/productdetail" class="flex flex-col gap-2 text-neutral-100">
+    <img src={image} alt={name} class="w-full h-2/3 object-cover rounded-lg" />
+    <div class="flex flex-col gap-1">
+      <h3 class="text-sm lg:text-base font-bold">{name}</h3>
+      <p class="text-neutral-60 text-xs">
+        <span>Gene: </span>
+        <span class="font-bold">{gender}</span>
+        <span>⸱</span>
+        <span>Age: </span>
+        <span class="font-bold">{age} months</span>
+      </p>
+      <h4 class="text-sm font-bold">{price} VND</h4>
+    </div>
+  </a>
 </div>

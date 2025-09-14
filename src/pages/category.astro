@@ -9,220 +9,260 @@ import Filter from "../assets/icons/filter.svg";
 import Arrowdown from "../assets/icons/arrowdown.svg";
 
 const pets = [
-      {
-        "name": "MO231 - Pomeranian White",
-        "gender": "Male",
-        "breed": "Small",
-        "color": "White",
-        "image": "/images/pomeranianwhite.png",
-        "age": "02",
-        "price": "6.900.000"
-    },
-    {
-        "name": "MO502 - Poodle Tiny Yellow",
-        "gender": "Female",
-        "breed": "Small",
-        "color": "Yellow",
-        "image": "/images/poodletinyyellow.png",
-        "age": "02",
-        "price": "3.900.000"
-    },
-    {
-        "name": "MO102 - Poodle Tiny Sepia",
-        "gender": "Male",
-        "breed": "Small",
-        "color": "Sepia",
-        "image": "/images/poodletinysepia.png",
-        "age": "02",
-        "price": "4.000.000"
-    },
-    {
-        "name": "MO512 - Alaskan Malamute Grey",
-        "gender": "Male",
-        "breed": "Small",
-        "color": "Grey",
-        "image": "/images/alaskamalamutegrey.png",
-        "age": "02",
-        "price": "8.900.000"
-    },
-    {
-        "name": "MO231 - Pembroke Corgi Cream",
-        "gender": "Male",
-        "breed": "Small",
-        "color": "Cream",
-        "image": "/images/pembrokecorgicream.png",
-        "age": "02",
-        "price": "7.900.000"
-    },
-    {
-        "name": "MO502 - Pembroke Corgi Tricolor",
-        "gender": "Female",
-        "breed": "Small",
-        "color": "Tricolor",
-        "image": "/images/pembrokecorgitricolor.png",
-        "age": "02",
-        "price": "9.000.000"
-    },
-    {
-        "name": "MO231 - Pomeranian White",
-        "gender": "Female",
-        "breed": "Small",
-        "color": "White",
-        "image": "/images/pomeranianwhite2.png",
-        "age": "02",
-        "price": "6.500.000"
-    },
-    {
-        "name": "MO512 - Poodle Tiny Dairy Cow",
-        "gender": "Male",
-        "breed": "Small",
-        "color": "Black",
-        "image": "/images/poodletinydairycow.png",
-        "age": "02",
-        "price": "5.000.000"
-    }
+  {
+    name: "MO231 - Pomeranian White",
+    gender: "Male",
+    breed: "Small",
+    color: "White",
+    image: "/images/pomeranianwhite.png",
+    age: "02",
+    price: "6.900.000",
+  },
+  {
+    name: "MO502 - Poodle Tiny Yellow",
+    gender: "Female",
+    breed: "Small",
+    color: "Yellow",
+    image: "/images/poodletinyyellow.png",
+    age: "02",
+    price: "3.900.000",
+  },
+  {
+    name: "MO102 - Poodle Tiny Sepia",
+    gender: "Male",
+    breed: "Small",
+    color: "Sepia",
+    image: "/images/poodletinysepia.png",
+    age: "02",
+    price: "4.000.000",
+  },
+  {
+    name: "MO512 - Alaskan Malamute Grey",
+    gender: "Male",
+    breed: "Small",
+    color: "Grey",
+    image: "/images/alaskamalamutegrey.png",
+    age: "02",
+    price: "8.900.000",
+  },
+  {
+    name: "MO231 - Pembroke Corgi Cream",
+    gender: "Male",
+    breed: "Small",
+    color: "Cream",
+    image: "/images/pembrokecorgicream.png",
+    age: "02",
+    price: "7.900.000",
+  },
+  {
+    name: "MO502 - Pembroke Corgi Tricolor",
+    gender: "Female",
+    breed: "Small",
+    color: "Tricolor",
+    image: "/images/pembrokecorgitricolor.png",
+    age: "02",
+    price: "9.000.000",
+  },
+  {
+    name: "MO231 - Pomeranian White",
+    gender: "Female",
+    breed: "Small",
+    color: "White",
+    image: "/images/pomeranianwhite2.png",
+    age: "02",
+    price: "6.500.000",
+  },
+  {
+    name: "MO512 - Poodle Tiny Dairy Cow",
+    gender: "Male",
+    breed: "Small",
+    color: "Black",
+    image: "/images/poodletinydairycow.png",
+    age: "02",
+    price: "5.000.000",
+  },
 ];
 ---
 
 <Layout>
-    <!-- Banner -->
-    <section id="categorybanner" class="px-4 lg:px-0">
-  <div class="relative flex flex-col lg:flex-row  bg-secondary-40 text-neutral-0 justify-between rounded-2xl lg:h-95 max-w-7xl px-4 lg:px-20 pt-10 mx-auto overflow-hidden">
-    <Rectanglebanner class=" hidden lg:block absolute bottom-6 lg:right-0 lg:top-0 z-10 rounded-2xl" />
-    <div class="lg:hidden absolute -bottom-4 left-0 rotate-3 w-full h-1/4 bg-primary-80"></div>
+  <!-- Banner -->
+  <section id="categorybanner" class="px-4 lg:px-0">
+    <div
+      class="relative flex flex-col lg:flex-row bg-secondary-40 text-neutral-0 justify-between rounded-2xl lg:h-95 max-w-7xl px-4 lg:px-20 pt-10 mx-auto overflow-hidden"
+    >
+      <Rectanglebanner
+        class="hidden lg:block absolute bottom-6 lg:right-0 lg:top-0 z-10 rounded-2xl"
+      />
+      <div
+        class="lg:hidden absolute -bottom-4 left-0 rotate-3 w-full h-1/4 bg-primary-80"
+      >
+      </div>
 
+      <!-- Text Side -->
+      <div
+        class="order:1 lg:order-2 flex flex-col justify-center gap-6 items-end lg:w-2/5 z-10"
+      >
+        <div class="flex flex-col gap-6 lg:items-end">
+          <!-- Introduction -->
+          <div
+            class="flex flex-col text-primary lg:text-neutral-0 font-bold lg:items-end"
+          >
+            <h1 class="font-extrabold text-4xl lg:text-[3.25rem]">
+              One More Friend
+            </h1>
+            <h2 class="font-bold text-2xl lg:text-4xl">Thousands More Fun!</h2>
+          </div>
 
-    <!-- Text Side -->
-    <div class="order:1 lg:order-2 flex flex-col justify-center gap-6 items-end lg:w-2/5 z-10">
-      <div class="flex flex-col gap-6 lg:items-end">
-        <!-- Introduction -->
-        <div class="flex flex-col text-primary lg:text-neutral-0 font-bold lg:items-end">
-          <h1 class="font-extrabold text-4xl lg:text-[3.25rem]">One More Friend</h1>
-          <h2 class="font-bold text-2xl lg:text-4xl">Thousands More Fun!</h2>
-        </div>
+          <!-- Description -->
+          <p
+            class="lg:text-end text-[12px] text-neutral-80 lg:text-neutral-20 lg:pl-15"
+          >
+            Having a pet means you have more joy, a new friend, a happy person
+            who will always be with you to have fun. We have 200+ different pets
+            that can meet your needs!
+          </p>
 
-        <!-- Description -->
-        <p class="lg:text-end text-[12px] text-neutral-80 lg:text-neutral-20 lg:pl-15">
-          Having a pet means you have more joy, a new friend, a happy
-          person who will always be with you to have fun. We have 200+
-          different pets that can meet your needs!
-        </p>
-
-        <!-- Buttons -->
-        <div class="flex gap-5">
-          <button
-						class="flex items-center border rounded-full border-primary text-primary px-3 lg:px-7 py-2 gap-2"
-					>
-						View intro
-						<Mediaplay class="border-1 rounded-full" />
-					</button>
-					<button
-						class="bg-primary text-neutral-0 rounded-full px-2 lg:px-7 py-4"
-					>
-						Explore Now
-					</button>
+          <!-- Buttons -->
+          <div class="flex gap-5">
+            <button
+              class="flex items-center border rounded-full border-primary text-primary px-3 lg:px-7 py-2 gap-2"
+            >
+              View intro
+              <Mediaplay class="border-1 rounded-full" />
+            </button>
+            <button
+              class="bg-primary text-neutral-0 rounded-full px-2 lg:px-7 py-4"
+            >
+              Explore Now
+            </button>
+          </div>
         </div>
       </div>
-    </div>
-    
-    <!-- Image Side -->
-    <div class="relative order:2 lg:order-1 flex items-end lg:w-3/5 z-10">
-      <Image
-        src={groupPuppies}
-        alt="group of puppies"
-        class="w-full object-contain"
-      />
-    </div>
-  </div>
-</section>
 
-<section class="max-w-7xl mx-auto px-6 py-10">
+      <!-- Image Side -->
+      <div class="relative order:2 lg:order-1 flex items-end lg:w-3/5 z-10">
+        <Image
+          src={groupPuppies}
+          alt="group of puppies"
+          class="w-full object-contain"
+        />
+      </div>
+    </div>
+  </section>
+
+  <section class="max-w-7xl mx-auto px-6 py-10">
     <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
       <!-- Sidebar -->
-       
+
       <aside class="hidden lg:block col-span-3 bg-white p-4 rounded-xl shadow">
         <h2 class="font-bold mb-4">Filter</h2>
 
         <!-- Gender -->
         <div>
           <p class="font-semibold">Gender</p>
-          <label><input type="checkbox" value="Male" class="filter-gender"> Male</label><br>
-          <label><input type="checkbox" value="Female" class="filter-gender"> Female</label>
+          <label
+            ><input type="checkbox" value="Male" class="filter-gender" /> Male</label
+          ><br />
+          <label
+            ><input type="checkbox" value="Female" class="filter-gender" /> Female</label
+          >
         </div>
 
         <!-- Color -->
         <div class="mt-4">
           <p class="font-semibold">Color</p>
-          <label><input type="checkbox" value="White" class="filter-color"> White</label><br>
-          <label><input type="checkbox" value="Black" class="filter-color"> Black</label><br>
-          <label><input type="checkbox" value="Cream" class="filter-color"> Cream</label><br>
-          <label><input type="checkbox" value="Grey" class="filter-color"> Grey</label>
+          <label
+            ><input type="checkbox" value="White" class="filter-color" /> White</label
+          ><br />
+          <label
+            ><input type="checkbox" value="Black" class="filter-color" /> Black</label
+          ><br />
+          <label
+            ><input type="checkbox" value="Cream" class="filter-color" /> Cream</label
+          ><br />
+          <label
+            ><input type="checkbox" value="Grey" class="filter-color" /> Grey</label
+          >
         </div>
 
         <!-- Breed -->
         <div class="mt-4">
           <p class="font-semibold">Breed</p>
-          <label><input type="checkbox" value="Small" class="filter-breed"> Small</label><br>
-          <label><input type="checkbox" value="Medium" class="filter-breed"> Medium</label><br>
-          <label><input type="checkbox" value="Large" class="filter-breed"> Large</label>
+          <label
+            ><input type="checkbox" value="Small" class="filter-breed" /> Small</label
+          ><br />
+          <label
+            ><input type="checkbox" value="Medium" class="filter-breed" /> Medium</label
+          ><br />
+          <label
+            ><input type="checkbox" value="Large" class="filter-breed" /> Large</label
+          >
         </div>
 
         <!-- Price -->
         <div class="mt-4">
-  <p class="font-semibold">Price</p>
-  <div class="flex items-center gap-2">
-    <input 
-      type="number" 
-      class="filter-price-min w-28 border rounded p-1 text-sm"
-      placeholder="Min"
-      min="0"
-      step="500000"
-    />
-    <span> </span>
-    <input 
-      type="number" 
-      class="filter-price-max w-28 border rounded p-1 text-sm"
-      placeholder="Max"
-      min="0"
-      step="500000"
-    />
-  </div>
-</div>
+          <p class="font-semibold">Price</p>
+          <div class="flex items-center gap-2">
+            <input
+              type="number"
+              class="filter-price-min w-28 border rounded p-1 text-sm"
+              placeholder="Min"
+              min="0"
+              step="500000"
+            />
+            <span> </span>
+            <input
+              type="number"
+              class="filter-price-max w-28 border rounded p-1 text-sm"
+              placeholder="Max"
+              min="0"
+              step="500000"
+            />
+          </div>
+        </div>
       </aside>
 
       <!-- Product Grid -->
       <div class="lg:hidden flex justify-between items-center col-span-9">
-        <div class=" flex justify-between items-center border-1 py-2 px-4 rounded-full w-1/2 text-neutral-40" >
-            <p>Sort by: Popular</p>
-            <Arrowdown class=""/>
+        <div
+          class="flex justify-between items-center border-1 py-2 px-4 rounded-full w-1/2 text-neutral-40"
+        >
+          <p>Sort by: Popular</p>
+          <Arrowdown class="" />
         </div>
-        <div class=" flex gap-2 text-primary">
-            <Filter />
-            <div class="font-bold">Filter</div>
+        <div class="flex gap-2 text-primary">
+          <Filter />
+          <div class="font-bold">Filter</div>
         </div>
       </div>
       <div class="col-span-9">
         <div class="flex justify-between">
-            <h2 class="text-2xl font-bold mb-6" id="categoryTitle">All Dogs<span class="text-sm font-regular text-neutral-60">52 puppies</span></h2>
-            <div class="hidden lg:flex justify-between items-center border-1 py-1 px-6 rounded-full text-neutral-40 gap-4" >
-                <p>Sort by: Popular</p>
-                <Arrowdown class=""/>
-            </div>
+          <h2 class="text-2xl font-bold mb-6" id="categoryTitle">
+            All Dogs<span class="text-sm font-regular text-neutral-60"
+              >52 puppies</span>
+          </h2>
+          <div
+            class="hidden lg:flex justify-between items-center border-1 py-1 px-6 rounded-full text-neutral-40 gap-4"
+          >
+            <p>Sort by: Popular</p>
+            <Arrowdown class="" />
+          </div>
         </div>
-        
-        
+
         <div id="dogGrid" class="grid grid-cols-2 lg:grid-cols-3 gap-6">
-          {pets.map((pet) => (
-            <div
-              class="product-card"
-              data-gender={pet.gender}
-              data-breed={pet.breed}
-              data-color={pet.color}
-              data-price={pet.price}
-            >
-              <Cardpets {...pet} />
-            </div>
-          ))}
+          {
+            pets.map((pet) => (
+              <div
+                class="product-card"
+                data-gender={pet.gender}
+                data-breed={pet.breed}
+                data-color={pet.color}
+                data-price={pet.price}
+              >
+                <Cardpets {...pet} />
+              </div>
+            ))
+          }
         </div>
       </div>
     </div>
@@ -233,28 +273,43 @@ const pets = [
   const grid = document.getElementById("dogGrid");
 
   function filterDogs() {
-    const genders = [...document.querySelectorAll(".filter-gender:checked")].map(cb => cb.value);
-    const colors  = [...document.querySelectorAll(".filter-color:checked")].map(cb => cb.value);
-    const breeds  = [...document.querySelectorAll(".filter-breed:checked")].map(cb => cb.value);
+    const genders = [
+      ...document.querySelectorAll(".filter-gender:checked"),
+    ].map((cb) => cb.value);
+    const colors = [...document.querySelectorAll(".filter-color:checked")].map(
+      (cb) => cb.value
+    );
+    const breeds = [...document.querySelectorAll(".filter-breed:checked")].map(
+      (cb) => cb.value
+    );
 
-    const minPrice = parseInt(document.querySelector(".filter-price-min")?.value || "0", 10);
-    const maxPrice = parseInt(document.querySelector(".filter-price-max")?.value || "999999999", 10);
+    const minPrice = parseInt(
+      document.querySelector(".filter-price-min")?.value || "0",
+      10
+    );
+    const maxPrice = parseInt(
+      document.querySelector(".filter-price-max")?.value || "999999999",
+      10
+    );
 
     if (!grid) return;
 
-    grid.querySelectorAll(".product-card").forEach(card => {
+    grid.querySelectorAll(".product-card").forEach((card) => {
       const cardPrice = parseInt(card.dataset.price || "0", 10);
-      const matchGender = !genders.length || genders.includes(card.dataset.gender || "");
-      const matchColor  = !colors.length || colors.includes(card.dataset.color || "");
-      const matchBreed  = !breeds.length || breeds.includes(card.dataset.breed || "");
-      const matchPrice  = cardPrice >= minPrice && cardPrice <= maxPrice;
+      const matchGender =
+        !genders.length || genders.includes(card.dataset.gender || "");
+      const matchColor =
+        !colors.length || colors.includes(card.dataset.color || "");
+      const matchBreed =
+        !breeds.length || breeds.includes(card.dataset.breed || "");
+      const matchPrice = cardPrice >= minPrice && cardPrice <= maxPrice;
 
       card.hidden = !(matchGender && matchColor && matchBreed && matchPrice);
     });
   }
 
   document.addEventListener("DOMContentLoaded", () => {
-    document.querySelectorAll("input").forEach(input => {
+    document.querySelectorAll("input").forEach((input) => {
       input.addEventListener("input", filterDogs);
       input.addEventListener("change", filterDogs);
     });
