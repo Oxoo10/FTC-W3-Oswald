@@ -23,35 +23,35 @@
     {
         "name": "MO512 - Alaskan Malamute Grey",
         "gene": "Male",
-        "image": "/src/assets/images/alaskamalamutegrey.png",
+        "image": "/images/alaskamalamutegrey.png",
         "age": "02 months",
         "price": "8.900.000"
     },
     {
         "name": "MO231 - Pembroke Corgi Cream",
         "gene": "Male",
-        "image": "/src/assets/images/pembrokecorgicream.png",
+        "image": "/images/pembrokecorgicream.png",
         "age": "02 months",
         "price": "7.900.000"
     },
     {
         "name": "MO502 - Pembroke Corgi Tricolor",
         "gene": "Female",
-        "image": "/src/assets/images/pembrokecorgitricolor.png",
+        "image": "/images/pembrokecorgitricolor.png",
         "age": "02 months",
         "price": "9.000.000"
     },
     {
         "name": "MO231 - Pomeranian White",
         "gene": "Female",
-        "image": "/src/assets/images/pomeranianwhite2.png",
+        "image": "/images/pomeranianwhite2.png",
         "age": "02 months",
         "price": "6.500.000"
     },
     {
         "name": "MO512 - Poodle Tiny Dairy Cow",
         "gene": "Male",
-        "image": "/src/assets/images/poodletinydairycow.png",
+        "image": "/images/poodletinydairycow.png",
         "age": "02 months",
         "price": "5.000.000"
     }
