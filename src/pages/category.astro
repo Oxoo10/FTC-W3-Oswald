@@ -1,15 +1,7 @@
 ---
 import { Image } from "astro:assets";
 import Layout from "../layouts/layout.astro";
-import heroImage from "../assets/images/heroimage.png";
 import Cardpets from "../components/card1.astro";
-import Cardproducts from "../components/card2.astro";
-import Cardarticles from "../components/card3.astro";
-// import pets from "../data/pets.json";
-// import products from "../data/products.json";
-// import articles from "../data/article.json";
-import Arrowleft from "../assets/icons/arrowleft.svg";
-import Herobg from "../layouts/herobg.astro";
 import Mediaplay from "../assets/icons/mediaplay.svg";
 import Rectanglebanner from "../assets/images/categorybannerrect.svg";
 import groupPuppies from "../assets/images/group-portrait-adorable-puppies1.png";
@@ -22,7 +14,7 @@ const pets = [
         "gender": "Male",
         "breed": "Small",
         "color": "White",
-        "image": "src/assets/images/pomeranianwhite.png",
+        "image": "/images/pomeranianwhite.png",
         "age": "02",
         "price": "6.900.000"
     },
@@ -31,7 +23,7 @@ const pets = [
         "gender": "Female",
         "breed": "Small",
         "color": "Yellow",
-        "image": "/src/assets/images/poodletinyyellow.png",
+        "image": "/images/poodletinyyellow.png",
         "age": "02",
         "price": "3.900.000"
     },
@@ -40,7 +32,7 @@ const pets = [
         "gender": "Male",
         "breed": "Small",
         "color": "Sepia",
-        "image": "/src/assets/images/poodletinysepia.png",
+        "image": "/images/poodletinysepia.png",
         "age": "02",
         "price": "4.000.000"
     },
@@ -49,7 +41,7 @@ const pets = [
         "gender": "Male",
         "breed": "Small",
         "color": "Grey",
-        "image": "/src/assets/images/alaskamalamutegrey.png",
+        "image": "/images/alaskamalamutegrey.png",
         "age": "02",
         "price": "8.900.000"
     },
@@ -58,7 +50,7 @@ const pets = [
         "gender": "Male",
         "breed": "Small",
         "color": "Cream",
-        "image": "/src/assets/images/pembrokecorgicream.png",
+        "image": "/images/pembrokecorgicream.png",
         "age": "02",
         "price": "7.900.000"
     },
@@ -67,7 +59,7 @@ const pets = [
         "gender": "Female",
         "breed": "Small",
         "color": "Tricolor",
-        "image": "/src/assets/images/pembrokecorgitricolor.png",
+        "image": "/images/pembrokecorgitricolor.png",
         "age": "02",
         "price": "9.000.000"
     },
@@ -76,7 +68,7 @@ const pets = [
         "gender": "Female",
         "breed": "Small",
         "color": "White",
-        "image": "/src/assets/images/pomeranianwhite2.png",
+        "image": "/images/pomeranianwhite2.png",
         "age": "02",
         "price": "6.500.000"
     },
@@ -85,7 +77,7 @@ const pets = [
         "gender": "Male",
         "breed": "Small",
         "color": "Black",
-        "image": "/src/assets/images/poodletinydairycow.png",
+        "image": "/images/poodletinydairycow.png",
         "age": "02",
         "price": "5.000.000"
     }
@@ -95,7 +87,7 @@ const pets = [
 <Layout>
     <!-- Banner -->
     <section id="categorybanner" class="px-4 lg:px-0">
-  <div class="relative flex flex-col lg:flex-row  bg-secondary-40 text-neutral-0 justify-between rounded-2xl lg:h-95 max-w-7xl px-20 pt-10 mx-auto overflow-hidden">
+  <div class="relative flex flex-col lg:flex-row  bg-secondary-40 text-neutral-0 justify-between rounded-2xl lg:h-95 max-w-7xl px-4 lg:px-20 pt-10 mx-auto overflow-hidden">
     <Rectanglebanner class=" hidden lg:block absolute bottom-6 lg:right-0 lg:top-0 z-10 rounded-2xl" />
     <div class="lg:hidden absolute -bottom-4 left-0 rotate-3 w-full h-1/4 bg-primary-80"></div>
 
@@ -105,8 +97,8 @@ const pets = [
       <div class="flex flex-col gap-6 lg:items-end">
         <!-- Introduction -->
         <div class="flex flex-col text-primary lg:text-neutral-0 font-bold lg:items-end">
-          <h1 class="font-extrabold text-[3.25rem]">One More Friend</h1>
-          <h2 class="font-bold text-4xl">Thousands More Fun!</h2>
+          <h1 class="font-extrabold text-4xl lg:text-[3.25rem]">One More Friend</h1>
+          <h2 class="font-bold text-2xl lg:text-4xl">Thousands More Fun!</h2>
         </div>
 
         <!-- Description -->
@@ -118,13 +110,17 @@ const pets = [
 
         <!-- Buttons -->
         <div class="flex gap-5">
-          <button class="flex items-center border rounded-full border-primary text-primary lg:border-neutral-0 lg:text-neutral-0 px-7 py-2 gap-2">
-            View intro
-            <Mediaplay class="border-1 rounded-full" />
-          </button>
-          <button class="bg-primary text-neutral-0 lg:bg-neutral-0 lg:text-primary rounded-full px-7 py-4">
-            Explore Now
-          </button>
+          <button
+						class="flex items-center border rounded-full border-primary text-primary px-3 lg:px-7 py-2 gap-2"
+					>
+						View intro
+						<Mediaplay class="border-1 rounded-full" />
+					</button>
+					<button
+						class="bg-primary text-neutral-0 rounded-full px-2 lg:px-7 py-4"
+					>
+						Explore Now
+					</button>
         </div>
       </div>
     </div>
