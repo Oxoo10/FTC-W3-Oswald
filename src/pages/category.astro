@@ -12,7 +12,9 @@ import Arrowleft from "../assets/icons/arrowleft.svg";
 import Herobg from "../layouts/herobg.astro";
 import Mediaplay from "../assets/icons/mediaplay.svg";
 import Rectanglebanner from "../assets/images/categorybannerrect.svg";
-import groupPuppies from "../assets/images/group-portrait-adorable-puppies1.png"
+import groupPuppies from "../assets/images/group-portrait-adorable-puppies1.png";
+import Filter from "../assets/icons/filter.svg";
+import Arrowdown from "../assets/icons/arrowdown.svg";
 
 const pets = [
       {
@@ -91,30 +93,24 @@ const pets = [
 ---
 
 <Layout>
-    <section id="categorybanner" class="">
-  <div class="relative flex bg-secondary-40 text-neutral-0 justify-between rounded-2xl h-95 max-w-7xl px-20 mx-auto overflow-hidden">
-    <Rectanglebanner class="absolute right-0 top-0 z-10 rounded-2xl" />
+    <!-- Banner -->
+    <section id="categorybanner" class="px-4 lg:px-0">
+  <div class="relative flex flex-col lg:flex-row  bg-secondary-40 text-neutral-0 justify-between rounded-2xl lg:h-95 max-w-7xl px-20 pt-10 mx-auto overflow-hidden">
+    <Rectanglebanner class=" hidden lg:block absolute bottom-6 lg:right-0 lg:top-0 z-10 rounded-2xl" />
+    <div class="lg:hidden absolute -bottom-4 left-0 rotate-3 w-full h-1/4 bg-primary-80"></div>
 
-    <!-- Image Side -->
-    <div class="relative flex items-end w-3/5 z-10">
-      <Image
-        src={groupPuppies}
-        alt="group of puppies"
-        class="w-full object-contain"
-      />
-    </div>
 
     <!-- Text Side -->
-    <div class="flex flex-col justify-center gap-6 items-end w-2/5 z-10">
-      <div class="flex flex-col gap-6 items-end">
+    <div class="order:1 lg:order-2 flex flex-col justify-center gap-6 items-end lg:w-2/5 z-10">
+      <div class="flex flex-col gap-6 lg:items-end">
         <!-- Introduction -->
-        <div class="flex flex-col font-bold items-end">
+        <div class="flex flex-col text-primary lg:text-neutral-0 font-bold lg:items-end">
           <h1 class="font-extrabold text-[3.25rem]">One More Friend</h1>
           <h2 class="font-bold text-4xl">Thousands More Fun!</h2>
         </div>
 
         <!-- Description -->
-        <p class="text-end text-[12px] text-neutral-20 pl-15">
+        <p class="lg:text-end text-[12px] text-neutral-80 lg:text-neutral-20 lg:pl-15">
           Having a pet means you have more joy, a new friend, a happy
           person who will always be with you to have fun. We have 200+
           different pets that can meet your needs!
@@ -122,23 +118,33 @@ const pets = [
 
         <!-- Buttons -->
         <div class="flex gap-5">
-          <button class="flex items-center border rounded-full border-neutral-0 text-neutral-0 px-7 py-2 gap-2">
+          <button class="flex items-center border rounded-full border-primary text-primary lg:border-neutral-0 lg:text-neutral-0 px-7 py-2 gap-2">
             View intro
             <Mediaplay class="border-1 rounded-full" />
           </button>
-          <button class="bg-neutral-0 text-primary rounded-full px-7 py-4">
+          <button class="bg-primary text-neutral-0 lg:bg-neutral-0 lg:text-primary rounded-full px-7 py-4">
             Explore Now
           </button>
         </div>
       </div>
     </div>
+    
+    <!-- Image Side -->
+    <div class="relative order:2 lg:order-1 flex items-end lg:w-3/5 z-10">
+      <Image
+        src={groupPuppies}
+        alt="group of puppies"
+        class="w-full object-contain"
+      />
+    </div>
   </div>
 </section>
 
 <section class="max-w-7xl mx-auto px-6 py-10">
-    <div class="grid grid-cols-12 gap-6">
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
       <!-- Sidebar -->
-      <aside class="col-span-3 bg-white p-4 rounded-xl shadow">
+       
+      <aside class="hidden lg:block col-span-3 bg-white p-4 rounded-xl shadow">
         <h2 class="font-bold mb-4">Filter</h2>
 
         <!-- Gender -->
@@ -189,8 +195,26 @@ const pets = [
       </aside>
 
       <!-- Product Grid -->
+      <div class="lg:hidden flex justify-between items-center col-span-9">
+        <div class=" flex justify-between items-center border-1 py-2 px-4 rounded-full w-1/2 text-neutral-40" >
+            <p>Sort by: Popular</p>
+            <Arrowdown class=""/>
+        </div>
+        <div class=" flex gap-2 text-primary">
+            <Filter />
+            <div class="font-bold">Filter</div>
+        </div>
+      </div>
       <div class="col-span-9">
-        <h2 class="text-2xl font-bold mb-6" id="categoryTitle">All Dogs</h2>
+        <div class="flex justify-between">
+            <h2 class="text-2xl font-bold mb-6" id="categoryTitle">All Dogs<span class="text-sm font-regular text-neutral-60">52 puppies</span></h2>
+            <div class="hidden lg:flex justify-between items-center border-1 py-1 px-6 rounded-full text-neutral-40 gap-4" >
+                <p>Sort by: Popular</p>
+                <Arrowdown class=""/>
+            </div>
+        </div>
+        
+        
         <div id="dogGrid" class="grid grid-cols-3 gap-6">
           {pets.map((pet) => (
             <div
