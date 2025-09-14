@@ -2,21 +2,21 @@
     {
         "name": "MO231 - Pomeranian White",
         "gene": "Male",
-        "image": "src/assets/images/pomeranianwhite.png",
+        "image": "/images/pomeranianwhite.png",
         "age": "02 months",
         "price": "6.900.000"
     },
     {
         "name": "MO502 - Poodle Tiny Yellow",
         "gene": "Female",
-        "image": "/src/assets/images/poodletinyyellow.png",
+        "image": "/images/poodletinyyellow.png",
         "age": "02 months",
         "price": "3.900.000"
     },
     {
         "name": "MO102 - Poodle Tiny Sepia",
         "gene": "Male",
-        "image": "/src/assets/images/poodletinysepia.png",
+        "image": "/images/poodletinysepia.png",
         "age": "02 months",
         "price": "4.000.000"
     },
