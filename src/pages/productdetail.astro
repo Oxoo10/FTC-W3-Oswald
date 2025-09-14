@@ -2,7 +2,6 @@
 // Import assets & Components
 import { Image } from "astro:assets";
 import Layout from "../layouts/layout.astro";
-import Shibaprofile from "../assets/images/shibainusepia.png";
 import Shiba1 from "../assets/images/shiba inu sepia/image 3.png";
 import Shiba2 from "../assets/images/shiba inu sepia/image 4.png";
 import Shiba3 from "../assets/images/shiba inu sepia/image 5.png";
@@ -104,7 +103,7 @@ const pets = [
         class="relative flex flex-col lg:flex-row w-full gap-6 mx-auto py-6"
     >
         <div
-            class="flex gap-6 flex-col lg:flex-row max-w-7xl lg:border border-neutral-10 rounded-2xl p-4 mx-auto"
+            class="flex flex-col lg:flex-row max-w-7xl lg:border border-neutral-10 rounded-2xl p-4 gap-6 mx-auto"
         >
             <div
                 x-data="{
@@ -128,7 +127,7 @@ const pets = [
                 class="flex flex-col gap-6"
             >
                 <!-- Main Image wrapped with link -->
-                <div class="w-full h-150 relative">
+                <div class="w-full h-full relative">
                     <img
                         :src="current.src"
                         alt={pet.name}
@@ -164,7 +163,7 @@ const pets = [
                             <Image
                                 src={img}
                                 alt="Thumbnail"
-                                class="w-30 object-cover rounded-lg cursor-pointer hover:border-2 hover:outline-2 hover:border-secondary-60 "
+                                class="w-30 object-cover rounded-lg cursor-pointer hover:border-2 hover:border-secondary-60 "
                                 data-thumbnail
                                 data-index={idx}
                                 @click="index = parseInt($el.dataset.index)"
